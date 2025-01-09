@@ -21,6 +21,102 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-  margin-bottom: 25px;
+  font-size: 1.8rem; /* Adjust the font size */
+  color: #cbb1b1; /* Set the text color */
+  text-align: center; /* Center-align the text */
+  font-family: Arial, sans-serif; /* Choose the font family */
+  margin: 20px 0; /* Add some spacing above and below */
+  letter-spacing: 2px; /* Add space between letters */
+}
+
+.input-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-con input {
+  background-color: transparent; /* Makes the background transparent */
+  border: 1px solid #ccc; /* Adds a border */
+  color: #c6aaaa; /* Text color */
+  font-size: 16px; /* Font size */
+  padding: 10px; /* Padding inside the input */
+  outline: none; /* Removes the outline when focused */
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.input-con input::placeholder {
+  color: #888; /* Placeholder text color */
+  opacity: 0.7; /* Makes the placeholder slightly transparent */
+}
+
+.input-con button {
+  background-color: #007bff; /* Primary blue color */
+  background: linear-gradient(to right, #cb1168, #fc25df);
+  margin: 10px;
+  color: #ffffff; /* White text */
+  font-size: 16px; /* Font size */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.input-con button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 2px;
+}
+
+.weather-info h2 {
+  margin: 2px;
+  color: #232121; /* White text */
+  font-size: 25px; /* Font size */
+  border: none; /* Removes border */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+}
+
+.weather-info h2:hover {
+  transform: scale(1.05);
+}
+
+.weather-info p {
+  margin: 2px;
+  color: #232121; /* White text */
+  font-size: 25px; /* Font size */
+  border: none; /* Removes border */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+}
+
+.weather-info p:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  border: none;
+  color: #cbb1b1; /* Removes border */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold;
+}
+
+.hidden:hover {
+  transform: scale(1.05);
 }
