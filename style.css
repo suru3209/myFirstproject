@@ -21,102 +21,87 @@ body {
 }
 
 h1 {
-  font-size: 1.8rem; /* Adjust the font size */
-  color: #cbb1b1; /* Set the text color */
-  text-align: center; /* Center-align the text */
-  font-family: Arial, sans-serif; /* Choose the font family */
-  margin: 20px 0; /* Add some spacing above and below */
-  letter-spacing: 2px; /* Add space between letters */
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
-.input-con {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+#city-input {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid rgba(227, 201, 201, 0.881); /* Semi-transparent border */
+  color: #fff; /* Text color */
+  padding: 10px;
+  font-size: 16px;
+  outline: none; /* Removes default focus outline */
+  border-radius: 5px; /* Rounded corners */
 }
 
-.input-con input {
-  background-color: transparent; /* Makes the background transparent */
-  border: 1px solid #ccc; /* Adds a border */
-  color: #c6aaaa; /* Text color */
+#city-input {
+  border-color: rgba(0, 0, 0, 0.8); /* Darker border on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#city-input::placeholder {
+  color: rgba(199, 184, 184, 0.852); /* Semi-transparent placeholder */
+  font-style: italic;
+}
+
+#city-input:hover {
+  border-color: rgba(0, 0, 0, 0.8); /* Darker border on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+.btt {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* Removes default border */
+  padding: 10px 20px; /* Padding for size */
   font-size: 16px; /* Font size */
-  padding: 10px; /* Padding inside the input */
-  outline: none; /* Removes the outline when focused */
-  border-radius: 5px;
-  margin: 10px;
-}
-
-.input-con input::placeholder {
-  color: #888; /* Placeholder text color */
-  opacity: 0.7; /* Makes the placeholder slightly transparent */
-}
-
-.input-con button {
-  background-color: #007bff; /* Primary blue color */
-  background: linear-gradient(to right, #cb1168, #fc25df);
-  margin: 10px;
-  color: #ffffff; /* White text */
-  font-size: 16px; /* Font size */
-  padding: 10px 20px; /* Padding inside the button */
-  border: none; /* Removes border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  text-transform: uppercase; /* Uppercase text */
-  font-weight: bold; /* Bold text */
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.3s ease; /* Smooth transitions for hover and focus */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
-.input-con button:hover {
+.btt:hover {
   background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.05); /* Slightly enlarges the button on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+  transform: translateY(-2px); /* Lift effect */
 }
 
-.weather-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  gap: 2px;
-}
-
-.weather-info h2 {
-  margin: 2px;
-  color: #232121; /* White text */
-  font-size: 25px; /* Font size */
-  border: none; /* Removes border */
-  cursor: pointer; /* Pointer cursor on hover */
-  text-transform: uppercase; /* Uppercase text */
-  font-weight: bold; /* Bold text */
-}
-
-.weather-info h2:hover {
-  transform: scale(1.05);
-}
-
-.weather-info p {
-  margin: 2px;
-  color: #232121; /* White text */
-  font-size: 25px; /* Font size */
-  border: none; /* Removes border */
-  cursor: pointer; /* Pointer cursor on hover */
-  text-transform: uppercase; /* Uppercase text */
-  font-weight: bold; /* Bold text */
-}
-
-.weather-info p:hover {
-  transform: scale(1.05);
-}
-
-.hidden {
-  border: none;
-  color: #cbb1b1; /* Removes border */
-  cursor: pointer; /* Pointer cursor on hover */
-  text-transform: uppercase; /* Uppercase text */
+h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
   font-weight: bold;
+  color: #bba6a6;
+  text-align: center;
+  margin: 10px 0;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.hidden:hover {
-  transform: scale(1.05);
+h2:hover {
+  color: #31383f;
+  border-color: #0056b3;
+}
+
+#tem,
+#discription {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(28, 24, 24, 0.782);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+#error-msg {
+  color: red;
+  font-size: 1.2rem;
 }
